@@ -355,6 +355,16 @@
         padding: 0;
         top: 11.2rem;
     }  
+	.not-found-fond {
+		width:35%;
+        z-index:-1;
+        right: 0;
+        padding: 0;
+	}
+	.not-found-container {
+		height: 100vh;
+	}
+	
         /*******blog*****/
         .blog-border {
             border-radius: 15px;
@@ -475,12 +485,12 @@
         .contact-titles {
             font-size: 3rem; 
         }
-        .fond {
+        .fond, .not-found-fond {
             width:90%;
         }  
     }
     @media (min-width:521px) and (max-width:670px) {
-        .fond {
+        .fond, .not-found-fond {
             width:75%;
         }  
         .big-title {
@@ -491,7 +501,7 @@
         }
     }
     @media (min-width: 671px) and (max-width: 768px) {
-        .fond {
+        .fond, .not-found-fond {
             width:70%;
         }  
         .big-title {
@@ -503,7 +513,7 @@
     }
 
     @media (min-width: 769px) and (max-width: 868px) {
-        .fond {
+        .fond, .not-found-fond {
             width:55%;
         }  
         .big-title {
@@ -515,7 +525,7 @@
     }
 
     @media (min-width: 869px) and (max-width: 991px) {
-        .fond {
+        .fond, .not-found-fond {
             width:50%;
         }  
         .big-title {
