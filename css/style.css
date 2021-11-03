@@ -5,6 +5,7 @@
         background: linear-gradient(180deg, #020D1F 0%, #051746 16.11%, #092863 30.04%, #092964 100%);
         color: white;
         font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 1.1rem;
     }
     .bim-green-text {
         color:#319E6E;
@@ -111,7 +112,7 @@
     .about-section p {
         text-align: justify;
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
     /**********video section******/
     .video-section .ratio {
@@ -352,6 +353,7 @@
         z-index:-1;
         right: 0;
         padding: 0;
+        top: 11.2rem;
     }  
         /*******blog*****/
         .blog-border {
