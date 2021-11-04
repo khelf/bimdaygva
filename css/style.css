@@ -18,6 +18,10 @@
         border: 2px solid #319E6E;
     }
     /********navigation*******/
+
+    .navbar-brand img {
+        width: 90px;
+    }
     .menu-items a {
         color: white;
         transition: 0.5s;
@@ -144,10 +148,11 @@
     .pass {
         border: 5px solid white;
         border-radius: 20px;
-        height: 24rem;
+        height: 20rem;
     }
     .pass .special-p {
-        line-height: 2.4;
+        letter-spacing: 0.3rem;
+        line-height: 1;
     }
     .pass .lead {
         line-height: 0.8rem;
@@ -160,7 +165,7 @@
         -webkit-text-stroke-color: #319E6E;
         font-family: 'Barlow Semi Condensed', sans-serif;
         font-weight: 900;
-        font-size: 3rem;
+        font-size: 4rem;
         line-height: 0.8;
     }
     .bill-frame{
@@ -452,6 +457,10 @@
         }
     /*********responsive************/
     @media (max-width: 991px) {
+
+        .navbar-brand img {
+            width: 50px;
+        }
         .navbar {
             position: fixed;
             top: 0;
