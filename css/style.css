@@ -387,6 +387,9 @@
             text-align: justify;
             font-size:1.2rem;
         }
+        .articles .card {
+            transition: 0.8s;
+        }
         .speaker {
             position: absolute;
             z-index: -1;
