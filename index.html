@@ -373,14 +373,31 @@
 
         <!--Exposants-->
         <section class="pt-5 pb-5">
-            <div class="container mb-5">
-                <div class="row justify-content-center align-items-center text-uppercase text-center mb-5">
+            <div class="container">
+                <div class="row justify-content-center align-items-center text-uppercase text-center">
                     <div class="col-lg-10 col-12">
-                        <p class="lead bim-green-text fw-bold">expositions</p>
+                        <p class="lead bim-green-text fw-bold">exposition</p>
                         <h1 class="stroke-text big-title">exposants</h1>
                     </div>
                 </div>
-                <div
+                <div class="row justify-content-center align-items-center text-uppercase text-center">
+                    <div class="col-lg-7 col-12">
+                        <div class="bim-green-border rounded rounded-3">
+                            <button id="expo-btn"
+                                class="w-100 btn btn-lg bg-transparent text-uppercase disabled bim-green-text fw-bold fs-5">devenez
+                                exposant</button>
+                            <div id="expo-wrap"
+                                class="w-100 d-flex align-items-center justify-content-center bim-green-bg text-white fs-5 text-uppercase fw-bold">
+                                <input id="exposant_email" class="bg-transparent text-white fw-bold expo-input"
+                                    type="email" placeholder="VOTRE ADRESSE MAIL" />
+                                <i class="bi bi-forward-fill text-white expo-arrow" onclick="devenirexposant()"
+                                    type="button" title="S'inscrire"></i>
+                            </div>
+                        </div>
+                        <p id="_devenirexposantstatus" class="bim-green-text"></p>
+                    </div>
+                </div>
+                <!-- <div
                     class="row row-cols-lg-5 row-cols-md-2 row-cols-sm-2 row-cols-2 justify-content-between align-items-center mb-5">
                     <div class="col">
                         <div class="card mb-4">
@@ -436,21 +453,21 @@
                         href="exposition.html">liste complète
                         <i class="arrow-btn bi bi-forward-fill ms-2"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
 
         <!--Partenaires-->
-        <section class="pt-5">
+        <section class="">
             <div class="container">
                 <div class="row justify-content-center align-items-center text-center text-uppercase">
                     <div class="col-lg-10 col-12">
-                        <p class="lead bim-green-text fw-bold">nos partenaires</p>
+                        <!-- <p class="lead bim-green-text fw-bold">nos partenaires</p>
                         <h1 class="stroke-text big-title">partenaires</h1>
                         <div class="pt-5 pb-5 mt-5"></div>
-                        <div class="pt-5 pb-5 mt-5"></div>
-                        <div class="col-lg-3 col-md-6 col-10 mx-auto mt-5 pt-5">
-                            <p class="lead bim-green-text fw-bold">avec le soutien de</p>
+                        <div class="pt-5 pb-5 mt-5"></div> -->
+                        <div class="col-lg-3 col-md-6 col-10 mx-auto">
+                            <p class="lead bim-green-text fw-bold">évenement organisé<br>avec le soutien de</p>
                             <div class="card">
                                 <img class="card-img img-fluid" src="img/partenaires/soutien.jpg" alt="...">
                             </div>
@@ -520,7 +537,13 @@
 
     <script src="js/main.js"></script>
 
+    <script>
 
+        $(".expo-input").focus(function () {
+            $("#expo-wrap").css("background-color", "rgba(49, 158, 111, 0.514)");
+            $("#expo-wrap").css("transition", "1s");
+        });
+    </script>
 </body>
 
 </html>
