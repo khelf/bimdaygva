@@ -42,6 +42,7 @@ $(document).ready(function(){
                 $('body').toggleClass('modal-open');
             });
 })(jQuery);
+
 /* Newsletter */
 function subscribetonewsletter(){
   var xhttp = new XMLHttpRequest();
