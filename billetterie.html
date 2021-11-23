@@ -104,13 +104,18 @@
     <script>
         function iframeLoaded() {
             console.log('iframe loaded');
-            setTimeout(() => {
-                console.log("changing postion iframe");
+            console.log("changing postion iframe");
                 document.querySelector("iframe").style.position = 'relative';
                 document.querySelector("iframe").style.width = '100%';
-                document.querySelector("iframe").style.height = '490px';
+                document.querySelector("iframe").style.height = '650px';
                 document.querySelector("iframe").style.opacity = '1';
-            }, 3000);
+            // setTimeout(() => {
+            //     console.log("changing postion iframe");
+            //     document.querySelector("iframe").style.position = 'relative';
+            //     document.querySelector("iframe").style.width = '100%';
+            //     document.querySelector("iframe").style.height = '650px';
+            //     document.querySelector("iframe").style.opacity = '1';
+            // }, 500);
         }
     </script>
     <style>
@@ -182,6 +187,10 @@
                         <h1 class="stroke-text big-title">billetterie</h1>
                     </div>
                 </div>
+                <iframe class="bill-frame w-100 mb-5" title="Billetterie"
+                    src="https://widget.weezevent.com/ticket/E660914/?code=55891&locale=fr-FR&width_auto=1&color_primary=04143c"
+                    onload="iframeLoaded()">
+                </iframe>
                 <div class="row justify-content-center align-items-center text-center mb-5">
                     <div class="col-lg-7 col-10">
                         <div class="row d-flex justify-content-between align-items-center">
@@ -205,31 +214,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Iframe Section-->
-        <section class="pt-5">
-            <div class="container mb-5">
-                <div class="row justify-content-center align-items-center text-uppercase text-center mb-5">
-                    <div class="col-lg-10 col-12">
-                        <!-- <iframe class="bill-frame w-100" title="Billetterie"
-                            src="https://etickets.infomaniak.com/shop/6agUynGjVE/" onload="iframeLoaded()"></iframe> -->
-
-                        <!--Weezevent widget integration weezevent ticket-->
-                        <!-- <a title="Logiciel billetterie en ligne" href="https://weezevent.com/?c=sys_widget"
-                            class="weezevent-widget-integration"
-                            data-src="https://widget.weezevent.com/ticket/E660914/?code=55891&locale=fr-FR&width_auto=1&color_primary=04143c"
-                            data-width="650" data-height="600" data-id="660914" data-resize="1" data-width_auto="1"
-                            data-noscroll="0" data-use-container="yes" data-type="neo" target="_blank">Billetterie
-                            Weezevent</a> -->
-
-                        <iframe class="bill-frame w-100" title="Billetterie"
-                            src="https://widget.weezevent.com/ticket/E660914/?code=55891&locale=fr-FR&width_auto=1&color_primary=04143c"
-                            onload="iframeLoaded()">
-                        </iframe>
                     </div>
                 </div>
             </div>
