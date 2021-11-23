@@ -11,6 +11,10 @@
         color:#319E6E;
         text-transform: uppercase;
     }
+    .green-text {
+        color:#319E6E;
+        line-height: 0.5;
+    }
     .bim-green-bg {
         background-color: #319E6E;
     }
