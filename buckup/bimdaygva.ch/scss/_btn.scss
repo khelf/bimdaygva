@@ -1,0 +1,154 @@
+.boxed-btn {
+	background: #fff;
+	color: #131313;
+	display: inline-block;
+	padding: 18px 44px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid $btn_bg;
+    // width: 180px;
+    text-align: center;
+    color: $btn_bg !important;
+    text-transform: uppercase;
+    &:hover{
+        background: $btn_bg;
+        color: #fff !important;
+        border: 1px solid $btn_bg;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.button-contactForm {
+    background: $section_bg_2;
+	color: #fff !important;
+	display: inline-block;
+	padding: 18px 44px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    // width: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    &:hover{
+        background: $gradient_bg;
+        color: #fff !important;
+        border: none;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+
+    @media #{$mobile_device}{
+        height: 50px;
+        padding: 10px 34px;
+    }
+}
+.boxed-btn-red {
+	background: #fff;
+	color: #05386B;
+	display: inline-block;
+	padding: 16px 44px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #05386B;
+    // width: 180px;
+    text-align: center;
+    color: #05386B !important;
+    text-transform: capitalize;
+    &:hover{
+        background: #05386B;
+        color: #fff !important;
+        border: 2px solid #05386B;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}
+.boxed-btn2 {
+	background: transparent;
+	color: #fff;
+	display: inline-block;
+	padding: 18px 24px;
+	font-family: $font1;
+	font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    &:hover{
+        background: #fff;
+        color: #131313 !important;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+.boxed-btn-white {
+	background: transparent;
+	color: #fff;
+	display: inline-block;
+	padding: 16px 43px;
+	font-family: $font1;
+	font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff !important;
+    text-transform: capitalize;
+
+    @media #{$mobile_device} {
+        padding: 14px 20px;
+        font-size: 16px;
+        background: #fff;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        color: #000 !important;
+    }
+    @media #{$tablet_device} {
+        background: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        color: #000 !important;
+    }
+    /*
+    @media #{$tablet_land} {
+        background: #fff;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        color: #000 !important;
+    }*/
+    &:hover{
+        background: #fff !important;
+        color: #000 !important;
+        border: 2px solid #fff;
+        border-radius: 5px;
+    }
+    &:focus{
+        outline: none;
+    }
+    &.large-width{
+        width: 220px;
+    }
+}

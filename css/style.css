@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
     body {
         /* background-color: #051C53; */
         background: linear-gradient(180deg, #020D1F 0%, #051746 16.11%, #092863 30.04%, #092964 100%);
@@ -14,6 +15,9 @@
     .green-text {
         color:#319E6E;
         line-height: 0.5;
+    }
+    .blue-text {
+        color:#092964;
     }
     .bim-green-bg {
         background-color: #319E6E;
@@ -142,7 +146,7 @@
     }
     /*******cards*********/
     .card {
-        border: 3px solid white;
+        border:none;
     }
     .card, .card-img {
         border-radius: 20px;
@@ -198,6 +202,20 @@
         line-height: 0;
         font-weight: bold;
         font-size: 40px;
+    }
+    .info-link {
+        color: #319E6E;
+        transition: 1s;
+    }
+    .info-link:hover {
+        color: rgba(49, 158, 111, 0.60);
+    }
+    .modal-content {
+        background-color: #092964;
+        border: 1px solid white;
+    }
+    .card-text {
+        text-align: justify;
     }
     /****** input placehoders ******/
     .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -392,6 +410,7 @@
             font-size:1.2rem;
         }
         .articles .card {
+            border: 3px solid white;
             transition: 0.8s;
         }
         .speaker {

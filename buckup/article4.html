@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="Page" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#" data-non-member data-site="BIM">
+
+<head prefix="website: http://ogp.me/ns/website#">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
+ <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+ 
+   gtag('config', 'UA-149901931-1');
+ </script>
+ 
+ 
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+ 
+     <title>Le BIM au service du Smart Building -Par Emmanuel François et Nicolas Régnier-</title>
+ 
+     <!-- <link rel="canonical" href="https://www.bimdaygva.ch/"> -->
+ 
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <meta charset="utf-8" />
+     
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     
+     <!-- <base href="https://www.bimdaygva.ch"> -->
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+     <meta http-equiv="Content-Language" content="fr-FR">
+     
+     <meta name="generator" content="BIM DAY GVA">
+     
+     <meta name="publisher" content="BIM DAY GVA">
+     
+     <meta name="reply-to" content="contact@bimdaygva.ch">
+     
+     <meta name="email" content="contact@bimdaygva.ch" />
+     
+     <meta name="contact" content="contact@bimdaygva.ch" />
+     
+     <meta name="author" content="BIM DAY GVA">
+     
+     <meta name="robots" content="follow,index,all" />
+     
+     <meta name="organization" content="BIM DAY GVA" />
+     
+     <meta name="Location" content="Centre de Conférence Ramada Encore Geneva 10 route des Jeunes – 1227 CAROUGE​ " />
+     
+     <meta name="copyright" content="BIM DAY GVA Tous les droits sont réservés." />
+     
+     <!-- <meta name="identifier-url" content="bimdaygva.ch" /> -->
+     
+     <meta name="language" content="fr" />
+     
+     <meta name="expires" content="never">
+     
+     <meta name="description" content="BIM DAY GVA, Le 1ier salon consacré au BIM en Suisse Romande avec le but de réunir les acteurs du BIM du Canton et présenter les possibilités qu'offre le BIM." />
+     
+     <meta name="keywords" content="BIM, Building Information Modeling, Building, Modeling, Information, IoT, Smart City, Smart Building, Technologies, Intelligence artificielle, Artificial Intelligence, Data, Cloud,
+     Réalité virtuelle, Virtual Reality, Réalité augmentée, VR, RA, Architecture, GVA, Geneva, Genève, Suisse, Suisse Romande, Canton, Ingénierie, enginnering, Innovation, Bâtiment, modélisation, coordination, planification,
+     3d, 4d, 5d, 6d,7d, conférences Genève, BIM DAY GVA, événements suisse, événements, visiteurs, exposants, conférenciers, Switzerland, suisse romande, salon, maquette numérique, transition numérique, Mackup, business conférences, exposition, expo,
+     stand, logiciel, logiciels, application, démonstration, demonstration, solutions logicielles, solutions numériques, construction, retours d’expérience, Projets, Projets réalisés, coworking, échange, exchange, Salle,
+     renom, ouvrages, ouvrages réalisés, architecture, infrastructure, digitalisation, patrimoine, facility management, CIM, City Information Modeling, état des lieux, Partenaires, convergence,
+     systèmes d'informations geographiques, SI, Réserver votre stand, Réserver, passage au BIM, formation, espace Atelier, Atelier, Espace, Centre de Conférence Ramada Encore Geneva,
+     Centre de Conférence, Ramada Encore Geneva, Ramada Encore, Carouge, La Praille centre commercial La Praille, Salon BIM Genève, Exposants salon BIM Genève, Bim Day GVA à Genève, Billetterie Bim Day Gva Genève, Acheter un billet pour Bim Day GVA à Genève, Devenir exposant au salon Bim Day GVA à Genève, Découvrir nouvelles technologie pour l'architecture Genève, Découvrir nouvelles technologies pour l'architecture Genève, Nouvelles technologies architecture BIM Genève, BIM Genève, Building Information Modeling Genève, IoT Suisse, Smart City Suisse, Smart Building Suisse, Intelligence Artificielle, Data, Cloud, RA Genève, VR Genève, Conférence BIM Genève, Buisness Conférence Genève, Application RA Genève, bimdaygva, BIM DAY GVA, Ramada BIM, Bim day Genève, BIM Geneve, BIM Geneve event, BIM evenement suisse" />
+     
+     <meta name="news_keywords" content="BIM, Building Information Modeling, Building, Modeling, Information, IoT, Smart City, Smart Building, Technologies, Intelligence artificielle, Artificial Intelligence, Data, Cloud,
+     Réalité virtuelle, Virtual Reality, Réalité augmentée, VR, RA, Architecture, GVA, Geneva, Genève, Suisse, Suisse Romande, Canton, Ingénierie, enginnering, Innovation, Bâtiment, modélisation, coordination, planification,
+     3d, 4d, 5d, 6d,7d, conférences Genève, BIM DAY GVA, événements suisse, événements, visiteurs, exposants, conférenciers, Switzerland, suisse romande, salon, maquette numérique, transition numérique, Mackup, business conférences, exposition, expo,
+     stand, logiciel, logiciels, application, démonstration, demonstration, solutions logicielles, solutions numériques, construction, retours d’expérience, Projets, Projets réalisés, coworking, échange, exchange, Salle,
+     renom, ouvrages, ouvrages réalisés, architecture, infrastructure, digitalisation, patrimoine, facility management, CIM, City Information Modeling, état des lieux, Partenaires, convergence,
+     systèmes d'informations geographiques, SI, Réserver votre stand, Réserver, passage au BIM, formation, espace Atelier, Atelier, Espace, Centre de Conférence Ramada Encore Geneva,
+     Centre de Conférence, Ramada Encore Geneva, Ramada Encore, Carouge, La Praille centre commercial La Praille, Salon BIM Genève, Exposants salon BIM Genève, Bim Day GVA à Genève, Billetterie Bim Day Gva Genève, Acheter un billet pour Bim Day GVA à Genève, Devenir exposant au salon Bim Day GVA à Genève, Découvrir nouvelles technologie pour l'architecture Genève, Découvrir nouvelles technologies pour l'architecture Genève, Nouvelles technologies architecture BIM Genève, BIM Genève, Building Information Modeling Genève, IoT Suisse, Smart City Suisse, Smart Building Suisse, Intelligence Artificielle, Data, Cloud, RA Genève, VR Genève, Conférence BIM Genève, Buisness Conférence Genève, Application RA Genève, bimdaygva, BIM DAY GVA, Ramada BIM, Bim day Genève, BIM Geneve, BIM Geneve event, BIM evenement suisse"/>
+ 
+     <meta property="og:title" content="Le BIM au service du Smart Building -Par Emmanuel François et Nicolas Régnier-" />
+ 
+     <meta property="og:description" content="BIM DAY GVA, Le 1ier salon consacré au BIM en Suisse Romande avec le but de réunir les acteurs du BIM du Canton et présenter les possibilités qu'offre le BIM.">
+     
+     <meta property="og:image" content="https://www.bimdaygva.ch/images/logo_small.png">
+     
+     <meta property="og:type" content="website">
+ 
+     <!-- <meta property="og:url" content="https://www.bimdaygva.ch"> -->
+    
+     <meta property="og:site_name" content="BIM DAY GVA">
+ 
+     <!-- <link rel="manifest" href="site.webmanifest"> -->
+     <link rel="shortcut icon" type="image/x-icon" href="img/logo_small.png">
+     <!-- Place favicon.ico in the root directory -->
+ 
+     <!-- CSS here -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/themify-icons.css">
+     <link rel="stylesheet" href="css/nice-select.css">
+     <link rel="stylesheet" href="css/flaticon.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/slicknav.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .presenter-container {
+            width: 100%;
+        }
+
+        .presenter {
+            width: 100%;
+            height: 64vw;
+            background-size: 100% 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .presenter h3 {
+            font-size: 2vw;
+            color: #05386B;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: left;
+            line-height: 3vw;
+        }
+         /****************************************************/
+        #p1{
+            background-image: url('img/blog/article4/bg1.png');
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        } 
+        #p1 .text {
+            width: 60%;
+            margin-top: 5%
+        }
+        #p1 .text h3{
+            font-size:4vw;
+            color: #05386B;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: center;
+            line-height: 1.2;
+        }
+        #p1 .text p{
+            text-align: right;
+            font-size: 2.5vw;
+            color:#05386B;
+            line-height: 1.2;
+            line-height: 1.2;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+        }
+        @media only screen and (max-width: 767px) {
+            #p1 .text {
+            width: 60%;
+            margin-right: 5%;
+            margin-top:10%;
+        }
+            #p1 .text h3{
+            font-size: 6vw;
+            line-height: 1.5;
+        }
+            #p1 .text p{
+            font-size: 4vw;
+            }
+        }
+         /****************************************************/
+        #p2 {
+            height: 64vw;
+            background-image: url('img/blog/article4/bg2.png');
+        }
+
+        #p2 .text {
+            width: 80%;
+        }
+        #p2 .text .paragraphe {
+            font-size:1.5vw;
+            color:#252525;
+            text-align: justify;
+            text-transform: none;
+            line-height: 1.8;
+            
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            #p2 {
+            height: 110vw;
+            background-image: url('img/blog/article4/bg2-m.png');
+        }
+
+            #p2 .text .paragraphe {
+            font-size: 2vw;
+            line-height: 2;   
+        }
+
+        }
+        @media only screen and (max-width: 767px) {
+            #p2 {
+            height: 248vw;
+            background-image: url('img/blog/article4/bg2-sm.png');
+        }
+            #p2 .text .paragraphe {
+            font-size: 3.2vw;
+            line-height: 2;   
+        }
+        }
+         /****************************************************/
+        #p3 {
+            background-image: url('img/blog/article4/bg3.png');
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #p3 .text {
+            width: 50%;
+            margin-right: 5%;
+            margin-top: 10%;
+        }
+        #p3 .text h3{
+            font-size:2.3vw;
+            color: #05386B;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: justify;
+            line-height: 1.2;
+        }
+        #p3 .text p{
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 2vw;
+            color:#05386B;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            #p3 .text {
+            margin-top: 0%;
+        }
+        #p3 .text h3{
+            font-size:2.5vw;
+            line-height: 1.5;
+        }
+        #p3 .text p{
+            font-size: 2.2vw;
+        }
+        }
+        @media only screen and (max-width: 767px) {
+            #p3 {
+            background-image: url('img/blog/article4/bg3-sm.png');
+            height: 117vw;
+        }
+            #p3 .text {
+            width: 60%;
+            margin-top: 0%;
+            margin-right: 2%;
+        }
+        #p3 .text h3{
+            font-size: 3.5vw;
+            line-height: 1.5;
+        }
+        #p3 .text p{
+            font-size: 3.2vw;
+        }
+        }
+            /**********/ /****************************************************/
+        #p4{
+            height: 20vw;
+        } 
+        #p4 .text {
+            width: 80%;
+        }
+        #p4 .text .paragraphe {
+            font-size:1.5vw;
+            color:#252525;
+            text-align: justify;
+            text-transform: none;
+            line-height: 1.8;
+            
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            #p4{
+            height: 30vw;
+        } 
+            #p4 .text .paragraphe {
+            font-size: 2vw;
+            line-height: 2;   
+        }
+        }
+        @media only screen and (max-width: 767px) {
+            #p4{
+            height: 80vw;
+        } 
+            #p4 .text .paragraphe {
+            font-size: 3.2vw;
+            line-height: 2;   
+        }
+        }
+        /****************************************************/
+        #p5 {
+            background-image: url('img/blog/article4/bg5.png');
+            /*height: 44vw;*/
+        }
+
+        #p5 .text {
+            width: 55%;
+            margin-right: 25%;
+        }
+        #p5 .text h3{
+            font-size:2.3vw;
+            color: #05386B;
+            text-transform: uppercase;
+            font-weight: 800;
+            text-align: justify;
+            line-height: 1.2;
+        }
+        #p5 .text p{
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 2vw;
+            color:#05386B;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            #p5 .text h3{
+            font-size:2.5vw;
+            line-height: 1.5;
+        }
+        #p5 .text p{
+            font-size: 2.2vw;
+        }
+        }
+        @media only screen and (max-width: 767px) {
+            #p5 .text {
+            width: 65%;
+            margin-right: 28%;
+        }
+        #p5 .text h3{
+            font-size: 3.5vw;
+            line-height: 1.5;
+        }
+        #p5 .text p{
+            font-size: 3.2vw;
+        }
+        }
+        /****************************************************/
+        #p6 {
+            background-image: url('img/blog/article4/bg6.png');
+        }
+
+        #p6 .text {
+            width: 80%;
+            margin-top: 5%;
+        }
+        #p6 .text .paragraphe {
+            font-size:1.5vw;
+            color:#252525;
+            text-align: justify;
+            text-transform: none;
+            line-height: 1.8;
+        }
+        #p6 .partage {
+            width: 80%;
+            font-size: 2.3vw;
+            text-align: center;
+            margin-top: 5%;
+        }
+        #p6 .partage p{
+            text-align: center;
+            text-transform: none;
+            font-size: 2vw;
+            color:#05386B;
+        }
+        #p6 .partage ul li{
+            display:inline;
+            list-style: none;
+            text-align: center;
+        }
+        #p6 .partage ul li a i{
+            font-size: 4vw;
+            color: #05386B;
+            transition: all 0.5s ease;
+        }
+        #p6 .partage ul li a:hover i{
+            color:rgb(11, 216, 137);
+        }
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            #p6 {
+            height: 64vw;
+        }
+            #p6 .text .paragraphe {
+            font-size: 2vw;
+            line-height: 2;   
+        }
+        #p6 .partage p{
+            font-size: 3vw;
+        }
+        #p6 .partage ul li a i{
+            font-size: 6.5vw;
+        }
+        }
+        @media only screen and (max-width: 767px) {
+            #p6 {
+            background-image: url('img/blog/article4/bg6-sm.png');
+            height: 153vw;
+        }
+        #p6 .text {
+            margin-top: 0%;
+        }
+            #p6 .text .paragraphe {
+            font-size: 3.2vw;
+            line-height: 2;   
+        }
+        #p6 .partage p{
+            font-size: 5vw;
+        }
+        #p6 .partage ul li a i{
+            font-size: 10vw;
+        }
+        }
+        
+    </style>
+     </head>
+<body>
+    <!-- header-start -->
+     <header>
+           <div class="header-area">
+               <div id="sticky-header" class="main-header-area">
+                   <div class="container-fluid p-0">
+                       <div class="row align-items-center justify-content-between no-gutters">
+                           <div class="col-xl-2 col-lg-2">
+                               <div class="logo-img">
+                                   <a href="index.html">
+                                       <img src="img/logo_small.png" alt="">
+                                   </a>
+                               </div>
+                           </div>
+                           <div class="col-xl-8 col-lg-8">
+                               <div class="main-menu d-none d-lg-block">
+                                   <nav>
+                                       <ul id="navigation">
+                                           <li><a href="index.html">Accueil</a></li>   
+                                           <li><a href="conferences.html">Conférences</a></li>
+                                           <li><a href="exposition.html">Expositions</a></li>
+                                           <li><a href="multimedia.html">Multimedia</a></li>
+                                           <li><a href="blog.html">Blog</a></li>
+                                           <li><a href="contact.html">Contact</a></li>
+                                       </ul>
+                                   </nav>
+                               </div>
+                           </div>
+                           
+                           <div class="col-12">
+                               <div class="mobile_menu d-block d-lg-none"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+     </header>
+    <!-- header-end -->
+        <!-- slider_area_blog -->
+        <div class="slider_area_blog">
+       </div>
+       <!-- slider_area_blog-->
+<div class="presenter-container">
+    <div id="p1" class="presenter">
+        <div class="text">
+            <h3> Le BIM au service du Smart Building</h3>
+            <p>par Emmanuel François</p><p>& Nicolas Régnier</p>
+        </div>
+    </div>
+    <div id="p2" class="presenter">
+        <div class="text">
+            <p class="paragraphe">
+                La SBA, Smart Building Alliance for Smart Cities, est une association qui a pour objectif d'accompagner les acteurs du bâtiment et de la ville dans la transition numérique combinée à une transition énergétique et environnementale.
+                Nous sommes dans un monde hyper connecté où les citoyens, les bâtiments, la mobilité, les territoires, les équipements et les infrastructures sont à la fois connectés et communicants. Il y a une interaction en temps réels entre des données physiques dynamiques et des données statiques issues du BIM.                
+            </p>
+            <p class="paragraphe">
+                Les notions de partage et de mutualisation sont fondamentales pour créer des interactions entre ces deux mondes et faire tomber les silos qui les séparent. Le bâtiment devient une plate-forme de services. Sa valeur n'est plus évaluée seulement selon sa valeur foncière mais également selon sa valeur servicielle.
+            </p>
+            <p class="paragraphe">
+                La SBA a créé un cadre de référence, Ready 2 Services (R2S), qui définit les prérequis nécessaires à la création de services dans les bâtiments.  Le bâtiment se divise en 3 couches : <br>
+                - une couche équipements et d'interfaces (équipements connectés, capteurs...)<br>
+                - une couche d'infrastructure numérique (communication, circulation des données…)<br>
+                - une couche applicative (applications, services...)<br>
+                Ces 3 couches doivent être indépendantes et interopérables pour permettre d'intégrer de nouveaux équipements et de nouveaux services tout au long de l’exploitation du bâtiment.                
+            </p>
+        </div>        
+    </div>
+    <div id="p3" class="presenter">
+        <div class="text">
+            <h3>« Il faut dès aujourd’hui déployer un réseau Smart dans chaque bâtiment, peu importe qu’il soit résidentiel ou tertiaire. Dès aujourd’hui, pas dans 5 ans ou dans 10 ans si nous voulons résoudre les problématiques actuelles et faire face aux enjeux environnementaux, sociétaux et économiques. »</h3>
+            <p>Emmanuel François</p>
+        </div>
+    </div>
+    <div id="p4" class="presenter">
+        <div class="text">
+            <p class="paragraphe">
+                Ce cadre de référence traite aujourd’hui du thème de l’Energie (R2S Grids) et va incrémenter au fur et à mesure les thèmes de la e-mobilité (R2S Mobility), du bien-être (R2S Wellbeing), de la gestion de l'espace (R2S Spaces)  et de l'aide à la personne (R2S care).
+            </p>
+            <p class="paragraphe">
+                La commission BIM de la SBA a développé le premier cadre de référence des usages en BIM, Bim4Value (B4V), 200 acteurs de la profession ont participé à la création de ce référentiel qui contient 33 cas d'usages. 
+            </p>
+        </div>
+    </div>
+    <div id="p5" class="presenter">
+        <div class="text">
+            <h3>« L'objectif est de donner un cadre de référence sur les données statiques du bâtiment produites dans un processus BIM de programmation, de conception et d’exécution. »</h3>
+            <p>Nicolas Reignier</p>
+        </div>
+    </div>
+    <div id="p6" class="presenter">
+        <div class="text">
+            <p class="paragraphe">
+                Ce cadre de référence permet de définir pour chaque cas d’usage souhaité par la Maîtrise d’Ouvrage les exigences et les requis par phase du projet. Cela permet de répondre aux questions qui ? fait quoi ? et à quel moment ? et d'établir des règles claires de collaboration et les livrables nécessaires. Ce référentiel a été testé sur plusieurs projets, le SBA souhaite continuer de le faire vivre et développer notamment la partie contractualisation, l'ergonomie et intégrer le calcul des retours sur investissements.
+            </p>
+        </div>
+        <div class="partage">
+            <p>Partagez Sur</p>
+            <ul>
+                <li><a target="_blank" href="https://twitter.com/intent/tweet?text=Le%20BIM%20au%20service%20du%20Smart Building%20-Par%20Emmanuel%20François%20et%20Nicolas Régnier-%0a%0dhttps://www.bimdaygva.ch/article4.html"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.bimdaygva.ch/article4.html&title=Bim%20Day%20GVA&summary=Bim%20Day%20GVA%20Blog&source=LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+ <!-- footer_start -->
+ <footer class="footer footer_bg_1">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row text-center align-items-center">
+                <div class="col-xl-12 col-md-12 col-lg-12">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">
+                        Suivez-nous
+                        </h3>
+                        <ul>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a target="_blank" href="https://twitter.com/bimdaygva"><i class="fa fa-twitter"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/bimdaygva/"><i class="fa fa-instagram"></i></a></li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center align-items-center">
+                <div class="col-xl-12 col-md-12 col-lg-12">
+                        <div class="footer_widget">
+                            <div class="newsletter_text">
+                                <h3>
+                                    Inscrivez-vous à la Newsletter
+                                </h3>
+                            </div>
+                            <div class="newsletter_form">
+                                <input type="email" id="newsletter_email" class="form-control" placeholder="Votre adresse Email">
+                                <button type="submit" title="S'inscrire" onclick="sendemailnewsletter()">S'enregistrer</button>
+                                <p id="_sendemailnewsletterstatus"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <p class="copy_right">
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script><a href="index.html"> BIM DAY GVA</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+ <!-- footer_end -->
+
+ <!-- Back to top -->
+  <div id="back-to-top"></div>
+ <!-- /Back to top -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

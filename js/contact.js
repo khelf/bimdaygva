@@ -8,7 +8,7 @@ function sendmessage() {
         document.getElementById("form_lastname").value = "";
         document.getElementById("form_email").value = "";
         document.getElementById("form_message").value = "";
-        document.getElementById("_sendmessagestatus").innerHTML = "Nous avons reçu votre message, Merci de nous avoir contacter.";
+        document.getElementById("_sendmessagestatus").innerHTML = "Nous avons reçu votre message, merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais.";
       } else { document.getElementById("_sendmessagestatus").innerHTML = "veuillez vérifier vos informations"; }
       document.getElementById("_sendmessage").disabled = false;
     }
