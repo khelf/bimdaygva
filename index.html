@@ -257,7 +257,7 @@
 
         <!--Programme-->
         <section class="pt-5 pb-5">
-            <div class="container mb-5">
+            <div class="container">
                 <div class="row justify-content-center align-items-center text-center">
                     <div class="col-lg-10 col-12">
                         <p class="lead bim-green-text fw-bold">conférences</p>
@@ -320,9 +320,9 @@
                             <hr class="prog-line mx-auto">
 
                             <!--Pause-->
-                            <p class="lead fw-bold">12h00 - 14h00</p>
+                            <!-- <p class="lead fw-bold">12h00 - 14h00</p>
                             <p class="lead bim-green-text fw-bold">PAUSE</p>
-                            <hr class="prog-line mx-auto">
+                            <hr class="prog-line mx-auto"> -->
 
                         </div>
                         <div id="midi" class="d-none">
@@ -412,42 +412,46 @@
                         <p id="_devenirexposantstatus" class="bim-green-text"></p>
                     </div>
                 </div>
-                <div
-                    class="row row-cols-lg-5 row-cols-md-2 row-cols-sm-2 row-cols-2 justify-content-start align-items-center mt-5">
+                <div class="row row-cols-lg-5 row-cols-2 justify-content-start align-items-center mt-5">
+
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/betelec.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/drawing.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://draw-ing.ch/" target="_blank">
+                                    <h5>DRAW-ING</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo1Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="http://www.betelec.ch/" target="_blank">
-                            <h3>BETELEC</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo1Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo1Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">BETELEC</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">DRAW-ING</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/betelec.jpg"
+                                                    <img src="img/exposants/drawing.jpg"
                                                         class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            Betelec est une entreprise qui a pour but l'ingénierie, le
-                                                            conseil, la conception, l'établissement de projets ainsi que
-                                                            la direction de travaux et l'exploitation dans le domaine
-                                                            des installations électriques et de la modélisation 3D.
+                                                        <p class="card-text exposant-card-text">
+                                                            Draw-ing BIM Solutions, la première plateforme de mise en
+                                                            relation entre spécialistes BIM en Suisse et à l'étranger.
+                                                            Notre objectif : devenir le premier site de référencement
+                                                            des spécialistes BIM, faciliter les mises en relations entre
+                                                            prestataires BIM et clients potentiels, créer une communauté
+                                                            et des interactions interentreprises.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -455,8 +459,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white"
-                                            href="http://www.betelec.ch/" target="_blank">Visiter le site
+                                        <a role="button" class="btn bim-green-bg text-white" href="https://draw-ing.ch/"
+                                            target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Fermer</button>
@@ -467,45 +471,41 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/bimsync.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/dalux.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://dalux.com/" target="_blank">
+                                    <h5>DALUX</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo2Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://bimsync.com/" target="_blank">
-                            <h3>BIMSYNC</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo2Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo2Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">BIMSYNC</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">DALUX</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/bimsync.jpg"
-                                                        class="img-fluid rounded-3 mb-3">
+                                                    <img src="img/exposants/dalux.jpg" class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            En 2003, l'industrie norvégienne s'est lancée dans une
-                                                            croisade pour la numérisation du secteur de la construction.
-                                                            Catenda occupait une place centrale, apprenant et
-                                                            développant la plateforme de demain pour concrétiser cette
-                                                            vision. Aujourd'hui, nous disposons toujours du CDE le plus
-                                                            simple d'utilisation et le plus moderne qui soit, Bimsync.
-                                                            Nous avons depuis développé un nouveau produit dans la
-                                                            continuité de Bimsync, s'adressant cette fois aux
-                                                            utilisateurs du batiment pendant la phase d'opération
-                                                            maintenance : Catenda BOS.
+                                                        <p class="card-text exposant-card-text">
+                                                            Dalux est une société Danoise qui se spécialise depuis près
+                                                            de 15 ans dans l'amélioration de l'efficacité des processus
+                                                            de construction avec un logiciel permettant de travailler
+                                                            avec le BIM, la gestion de documents et la réalité augmentée
+                                                            directement sur site.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -513,7 +513,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white" href="https://bimsync.com/"
+                                        <a role="button" class="btn bim-green-bg text-white" href="https://dalux.com/"
                                             target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
@@ -525,36 +525,50 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/cad.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/ecobim.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://www.ecobim.io/"
+                                    target="_blank">
+                                    <h5>ECOBIM</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo3Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://www.cadatwork.com/" target="_blank">
-                            <h3>CAD@WORK</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo3Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo3Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">CAD@WORK</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">ECOBIM</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/cad.jpg" class="img-fluid rounded-3 mb-3">
+                                                    <img src="img/exposants/ecobim.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            Société de conseil dédiée au processus BIM à destination des
-                                                            professionnels de la construction. </p>
+                                                        <p class="card-text exposant-card-text">
+                                                            EcoBIM est une start-up basée à Genève, active dans le
+                                                            développement d’extensions Revit pour l’efficacité
+                                                            énergétique et la construction durable. Les add-ins EcoBIM
+                                                            sont des solutions innovantes permettant de vérifier la
+                                                            conformité aux normes SIA avec une efficacité remarquable.
+                                                            Avec EcoBIM, les informations géométriques des maquettes
+                                                            Revit sont automatiquement analysées, permettant à nos
+                                                            utilisateurs de se concentrer sur leur cœur de métier. Les
+                                                            justificatifs peuvent être entièrement générés depuis nos
+                                                            add-ins, pour les autorisations de construire ou les
+                                                            certifications environnementales Minergie et SNBS.
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -562,7 +576,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://www.cadatwork.com/" target="_blank">Visiter le site
+                                            href="https://www.ecobim.io/" target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Fermer</button>
@@ -573,45 +587,46 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/hkd.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/bimly.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://www.bimly.fr/" target="_blank">
+                                    <h5>BIMLY</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo4Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://www.hkd-geomatique.com/"
-                            target="_blank">
-                            <h3>HKDgéomatique</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo4Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo4Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">HKDgéomatique</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">BIMLY</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/hkd.jpg" class="img-fluid rounded-3 mb-3">
+                                                    <img src="img/exposants/bimly.jpg" class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            HKDgéomatique est un bureau d’ingénieurs géomètres
-                                                            spécialisé dans la mesure 3D par laser scanner fixe et
-                                                            mobile, photogrammétrie terrestre et aérienne (drônes) ainsi
-                                                            que dans la modélisation 3D et BIM (Revit) de bâtiments,
-                                                            d’ouvrages d’art, d’infrastructures et de la couverture du
-                                                            sol. hkdgéomatique met en œuvre son savoir-faire pour
-                                                            garantir la précision et la fiabilité des données acquises
-                                                            et modélisées ainsi que leur juste géoréférencement, ou pour
-                                                            expertiser l’état tel que construit par comparaison entre
-                                                            nuages de points mesurés et maquette BIM projet.
+                                                        <p class="card-text exposant-card-text">
+                                                            Basée à Genève, à Lyon et à Marseille, BIMLY est une équipe
+                                                            de professionnels expérimentés qui s’adresse aux Entreprises
+                                                            Générales, aux Promoteurs et aux Mandataires qui recherchent
+                                                            un soutien pour augmenter l’efficience et la rentabilité de
+                                                            leurs projets BIM.
+                                                            BIMLY assure les missions suivantes : Coordination BIM et
+                                                            coordination spatiale, Direction d’études, Scan 3D &
+                                                            Modélisation, Data Management, AS-BUILT Numérique, Mise en
+                                                            exploitation du bâtiment (GMAO).
+                                                            BIMLY est catalyseur de la réussite de vos projets.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -620,7 +635,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://www.hkd-geomatique.com/" target="_blank">Visiter le site
+                                            href="https://www.bimly.fr/" target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Fermer</button>
@@ -631,38 +646,47 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/axeo.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/revizto.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://revizto.com/fr/"
+                                    target="_blank">
+                                    <h5>REVIZTO</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo5Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://axeobim.fr/" target="_blank">
-                            <h3>AXEOBIM</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo5Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo5Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">AXEOBIM</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">REVIZTO</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/axeo.jpg" class="img-fluid rounded-3 mb-3">
+                                                    <img src="img/exposants/revizto.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            Axeobim est une plateforme collaborative intuitive et
-                                                            modulaire qui permet aux professionnels de la construction
-                                                            d'assurer la gestion et le pilotage de leurs projets de la
-                                                            conception jusqu'à l'exploitation.
+                                                        <p class="card-text exposant-card-text">
+                                                            Revizto est développé par Vizerra, une entreprise
+                                                            technologique basée à Lausanne en Suisse. C'est un outil de
+                                                            collaboration en temps réel pour l'industrie de la
+                                                            construction. Revizto fournit une seule et même plateforme
+                                                            intégrée pour les équipes de projet et les flux de travail.
+                                                            Revizto assure une source unique d'informations pour le
+                                                            projet et facilite le processus de coordination BIM entre
+                                                            tous les participants en gérant les responsabilités et en
+                                                            s'attaquant aux défis du projet en temps réel.
                                                         </p>
                                                     </div>
                                                 </div>
@@ -670,8 +694,8 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white" href="https://axeobim.fr/"
-                                            target="_blank">Visiter le site
+                                        <a role="button" class="btn bim-green-bg text-white"
+                                            href="https://revizto.com/fr/" target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
                                             data-bs-dismiss="modal">Fermer</button>
@@ -682,45 +706,62 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/ertec.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/mensch.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://fr.mum.ch/" target="_blank">
+                                    <h5>MENSCH & MASCHINE</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo6Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://ertec.ch/" target="_blank">
-                            <h3>ERTEC</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo6Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo6Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">ERTEC</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">MENSCH und MASCHINE</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
                                             <div class="row text-center text-lg-start">
                                                 <div class="col-lg-4">
-                                                    <img src="img/exposants/ertec.jpg" class="img-fluid rounded-3 mb-3">
+                                                    <img src="img/exposants/mensch.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            Crée en 1980, Eretec SA est un bureau d'ingénieurs et
-                                                            laboratoire routier. En 1992, nous avons mis en place une
-                                                            cellule géomatique pour le suivi de nos chantiers routiers
-                                                            et guidage d'engins. Naturellement en 2014, nous nos sommes
-                                                            tournés vers les nouvelles technologies telles que les
-                                                            drones, le scan 3D et le BIM infrastructure, Notre solide
-                                                            expérience et recherche des dernières innovations en
-                                                            infrastructure font d'Ertec un partenaire essentiel pour vos
-                                                            projets BIM. Ertec SA a été nommé au BIM D'OR 2020 dans la
-                                                            catégorie infrastructure internationale pour le projet de
-                                                            l'usine Jaguar Land Rover en SLOVAQUIE.
+                                                        <p class="card-text exposant-card-text">
+                                                            Mensch und Maschine propose les prestations de BIM
+                                                            management suivantes :
+                                                        <ul>
+                                                            <li>
+                                                                AMO Assistance à Maitrise d'Ouvrage.
+                                                            </li>
+                                                            <li>
+                                                                AMOE Assistance à Maitrise d'Œuvre.
+                                                            </li>
+                                                            <li>
+                                                                Mandat de coordination BIM.
+                                                            </li>
+                                                            <li>
+                                                                Coaching et assistance projet.
+                                                            </li>
+                                                            <li>
+                                                                Création de gabarit entreprise.
+                                                            </li>
+                                                            <li>
+                                                                Modélisation et scan 3D.
+                                                            </li>
+                                                            <li>
+                                                                Formation CAO BIM.
+                                                            </li>
+                                                        </ul>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -728,7 +769,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white" href="https://ertec.ch/"
+                                        <a role="button" class="btn bim-green-bg text-white" href="https://fr.mum.ch/"
                                             target="_blank">Visiter le site
                                             web</a>
                                         <button type="button" class="btn btn-light"
@@ -740,288 +781,27 @@
                     </div>
 
                     <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/futurmap.jpg">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/kairnial.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://www.kairnial.com"
+                                    target="_blank">
+                                    <h5>KAIRNIAL</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo7Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
                         </div>
-                        <a class="text-decoration-none text-white" href="https://www.futurmap.com/" target="_blank">
-                            <h3>FUTURMAP</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo7Modal">
-                            En savoir plus
-                        </a>
                         <!-- Modal -->
                         <div class="modal fade" id="expo7Modal" tabindex="-1">
                             <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">FUTURMAP</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <div class="card bg-transparent">
-                                            <div class="row text-center text-lg-start">
-                                                <div class="col-lg-4">
-                                                    <img src="img/exposants/futurmap.jpg"
-                                                        class="img-fluid rounded-3 mb-3">
-                                                </div>
-                                                <div class="col-lg-8 p-0">
-                                                    <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            La société FUTURMAP est le leader français du traitement de
-                                                            données géographiques et données 3D. Fondée en 2013 à
-                                                            Madagascar, la société s’est spécialisée dans la réalisation
-                                                            de plans vectorisés et la modélisation de maquettes
-                                                            numériques BIM pour le bâtiment et l’infrastructure.
-                                                            FUTURMAP, composé de près de 250 collaborateurs, est donc en
-                                                            mesure de prendre en charge des projets de numérisation de
-                                                            petites et grandes envergures.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://www.futurmap.com/" target="_blank">Visiter le site
-                                            web</a>
-                                        <button type="button" class="btn btn-light"
-                                            data-bs-dismiss="modal">Fermer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/1spatial.jpg">
-                        </div>
-                        <a class="text-decoration-none text-white" href="https://1spatial.com/" target="_blank">
-                            <h3>1SPATIAL</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo8Modal">
-                            En savoir plus
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="expo8Modal" tabindex="-1">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">1SPATIAL</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <div class="card bg-transparent">
-                                            <div class="row text-center text-lg-start">
-                                                <div class="col-lg-4">
-                                                    <img src="img/exposants/1spatial.jpg"
-                                                        class="img-fluid rounded-3 mb-3">
-                                                </div>
-                                                <div class="col-lg-8 p-0">
-                                                    <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            1spatial est un leader mondialdans la fourniture de
-                                                            logicielset de prestations pour la gestion des données de
-                                                            localisation géospatiales. Nous nous efforçons de rendre le
-                                                            monde plus durable, plus sûr et plus intelligent pour
-                                                            l'avenir. Notre solution Realworld4D soutient votre
-                                                            stratégie digitale en reliant intelligemment les plans DAO,
-                                                            les maquettes numériques BIM, les données descriptives et
-                                                            les documents associés dans une solution de BIM GEM (Gestion
-                                                            Exploitation Maintenance) des batiments et des
-                                                            infrastructures réseaux, Notre approche utomatisée basée sur
-                                                            des règles gère la qualité, l'intégration et
-                                                            l'enrichissement des données 3D et 2D grâce à 1Integrate
-                                                            pour que vous disposiez d'un référentiel patrimonial précis
-                                                            et fiable.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://1spatial.com/" target="_blank">Visiter le site
-                                            web</a>
-                                        <button type="button" class="btn btn-light"
-                                            data-bs-dismiss="modal">Fermer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/sixense.jpg">
-                        </div>
-                        <a class="text-decoration-none text-white" href="https://www.sixense-group.com/"
-                            target="_blank">
-                            <h3>SIXENSE</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo9Modal">
-                            En savoir plus
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="expo9Modal" tabindex="-1">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">SIXENSE</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <div class="card bg-transparent">
-                                            <div class="row text-center text-lg-start">
-                                                <div class="col-lg-4">
-                                                    <img src="img/exposants/sixense.jpg"
-                                                        class="img-fluid rounded-3 mb-3">
-                                                </div>
-                                                <div class="col-lg-8 p-0">
-                                                    <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            Expertes de la captation, du partage et de la valorisation
-                                                            de la donnée 3D, les équipes Helimap et Sixense Mapping
-                                                            proposent leur service Scan to BIM :
-                                                            • Des solutions d’acquisition multiples pouvant se combiner
-                                                            pour répondre au besoin de chaque projet : LiDAR héliporté,
-                                                            photogrammétrie par drone ou ULM, scanner terrestre
-                                                            dynamique ou statique ;
-                                                            • La maîtrise de la précision de mesure et de la
-                                                            géolocalisation, et une parfaite connaissance des divers
-                                                            types d’actifs à modéliser nous permettent de répondre aux
-                                                            exigences d’exhaustivité et de précision requises pour
-                                                            chaque maquette.
-                                                            Opérant depuis la Suisse ou la France, nous intervenons
-                                                            rapidement dans le monde entier sur les projets de
-                                                            construction ou d’aménagement d’infrastructures et de
-                                                            bâtiments.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://www.sixense-group.com/" target="_blank">Visiter le site
-                                            web</a>
-                                        <button type="button" class="btn btn-light"
-                                            data-bs-dismiss="modal">Fermer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/mezzoteam.jpg">
-                        </div>
-                        <a class="text-decoration-none text-white" href="https://www.mezzoteam.com" target="_blank">
-                            <h3>MEZZOTEAM</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo10Modal">
-                            En savoir plus
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="expo10Modal" tabindex="-1">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">MEZZOTEAM</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body text-start">
-                                        <div class="card bg-transparent">
-                                            <div class="row text-center text-lg-start">
-                                                <div class="col-lg-4">
-                                                    <img src="img/exposants/mezzoteam.jpg"
-                                                        class="img-fluid rounded-3 mb-3">
-                                                </div>
-                                                <div class="col-lg-8 p-0">
-                                                    <div class="card-body pt-0">
-                                                        <p class="card-text">
-                                                            <strong>Mezzoteam, Environnement de Données Commun</strong>,
-                                                            permet à des
-                                                            milliers d’acteurs de la construction dans le monde de gérer
-                                                            leurs maquettes, documents et processus de validation, en
-                                                            toute sécurité. Utilisée de la phase études jusqu’à
-                                                            l’exploitation, la solution est proposée en mode
-                                                            <strong>Cloud ou en
-                                                                Intranet</strong> selon les besoins du projet.
-                                                            Mezzoteam dispose d’outils pour :
-                                                            <ul>
-                                                                <li>
-                                                                    explorer la maquette : visualisation, coupe et
-                                                                    cotation, navigation par zone et altimétrie
-                                                                    (référentiel de niveaux), etc.
-                                                                </li>
-                                                                <li>
-                                                                    gérer les données BIM : consulter, contrôler et
-                                                                    extraire les quantités des objets.
-                                                                </li>
-                                                                <li>
-                                                                    améliorer la productivité des équipes et la qualité
-                                                                    de l’information produite grâce à l’extension
-                                                                    Mezzoteam pour Revit.
-                                                                </li>
-                                                                <li>
-                                                                    collaborer autour de la maquette : fonctionnalités
-                                                                    de revue de projet BIM.
-                                                                </li>
-                                                                <li>
-                                                                    naviguer par zone et par altimétrie : référentiel de
-                                                                    niveaux.
-                                                                </li>
-                                                            </ul>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a role="button" class="btn bim-green-bg text-white"
-                                            href="https://www.mezzoteam.com" target="_blank">Visiter le site
-                                            web</a>
-                                        <button type="button" class="btn btn-light"
-                                            data-bs-dismiss="modal">Fermer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col text-center mb-5">
-                        <div class="card mb-2">
-                            <img class="card-img img-fluid" src="img/exposants/kairnial.jpg">
-                        </div>
-                        <a class="text-decoration-none text-white" href="https://www.kairnial.com" target="_blank">
-                            <h3>KAIRNIAL</h3>
-                        </a>
-                        <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
-                            data-bs-target="#expo11Modal">
-                            En savoir plus
-                        </a>
-                        <!-- Modal -->
-                        <div class="modal fade" id="expo11Modal" tabindex="-1">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">KAIRNIAL</h5>
-                                        <button type="button" class="btn-close btn-close-white"
-                                            data-bs-dismiss="modal"></button>
+                                        <h5 class="modal-title">KAIRNIAL</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
                                     </div>
                                     <div class="modal-body text-start">
                                         <div class="card bg-transparent">
@@ -1032,7 +812,7 @@
                                                 </div>
                                                 <div class="col-lg-8 p-0">
                                                     <div class="card-body pt-0">
-                                                        <p class="card-text">
+                                                        <p class="card-text exposant-card-text">
                                                             Kairnial est une <strong>plateforme collaborative</strong>
                                                             pour échanger,
                                                             capturer et piloter les données de vos assets. Constituée
@@ -1065,6 +845,228 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col text-center mb-5">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/mezzoteam.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://www.mezzoteam.com"
+                                    target="_blank">
+                                    <h5>MEZZOTEAM</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo8Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="expo8Modal" tabindex="-1">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">MEZZOTEAM</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <div class="card bg-transparent">
+                                            <div class="row text-center text-lg-start">
+                                                <div class="col-lg-4">
+                                                    <img src="img/exposants/mezzoteam.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
+                                                </div>
+                                                <div class="col-lg-8 p-0">
+                                                    <div class="card-body pt-0">
+                                                        <p class="card-text exposant-card-text">
+                                                            <strong>Mezzoteam, Environnement de Données Commun</strong>,
+                                                            permet à des
+                                                            milliers d’acteurs de la construction dans le monde de gérer
+                                                            leurs maquettes, documents et processus de validation, en
+                                                            toute sécurité. Utilisée de la phase études jusqu’à
+                                                            l’exploitation, la solution est proposée en mode
+                                                            <strong>Cloud ou en
+                                                                Intranet</strong> selon les besoins du projet.
+                                                            Mezzoteam dispose d’outils pour :
+                                                        <ul>
+                                                            <li>
+                                                                explorer la maquette : visualisation, coupe et
+                                                                cotation, navigation par zone et altimétrie
+                                                                (référentiel de niveaux), etc.
+                                                            </li>
+                                                            <li>
+                                                                gérer les données BIM : consulter, contrôler et
+                                                                extraire les quantités des objets.
+                                                            </li>
+                                                            <li>
+                                                                améliorer la productivité des équipes et la qualité
+                                                                de l’information produite grâce à l’extension
+                                                                Mezzoteam pour Revit.
+                                                            </li>
+                                                            <li>
+                                                                collaborer autour de la maquette : fonctionnalités
+                                                                de revue de projet BIM.
+                                                            </li>
+                                                            <li>
+                                                                naviguer par zone et par altimétrie : référentiel de
+                                                                niveaux.
+                                                            </li>
+                                                        </ul>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a role="button" class="btn bim-green-bg text-white"
+                                            href="https://www.mezzoteam.com" target="_blank">Visiter le site
+                                            web</a>
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col text-center mb-5">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/sixense.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://www.sixense-group.com/"
+                                    target="_blank">
+                                    <h5>SIXENSE</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo9Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="expo9Modal" tabindex="-1">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">SIXENSE</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <div class="card bg-transparent">
+                                            <div class="row text-center text-lg-start">
+                                                <div class="col-lg-4">
+                                                    <img src="img/exposants/sixense.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
+                                                </div>
+                                                <div class="col-lg-8 p-0">
+                                                    <div class="card-body pt-0">
+                                                        <p class="card-text exposant-card-text">
+                                                            Expertes de la captation, du partage et de la valorisation
+                                                            de la donnée 3D, les équipes Helimap et Sixense Mapping
+                                                            proposent leur service Scan to BIM :
+                                                        <ul>
+                                                            <li>
+                                                                Des solutions d’acquisition multiples pouvant se
+                                                                combiner pour répondre au besoin de chaque projet :
+                                                                LiDAR héliporté, photogrammétrie par drone ou ULM,
+                                                                scanner terrestre dynamique ou statique ;
+                                                            </li>
+                                                            <li>
+                                                                La maîtrise de la précision de mesure et de la
+                                                                géolocalisation, et une parfaite connaissance des
+                                                                divers types d’actifs à modéliser nous permettent de
+                                                                répondre aux exigences d’exhaustivité et de
+                                                                précision requises pour chaque maquette.
+                                                            </li>
+                                                        </ul>
+                                                        Opérant depuis la Suisse ou la France, nous intervenons
+                                                        rapidement dans le monde entier sur les projets de
+                                                        construction ou d’aménagement d’infrastructures et de
+                                                        bâtiments.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a role="button" class="btn bim-green-bg text-white"
+                                            href="https://www.sixense-group.com/" target="_blank">Visiter le site
+                                            web</a>
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col text-center mb-5">
+                        <div class="card h-100 mb-2 bg-transparent exposant-card">
+                            <img class="card-img-top exposant-card-img-top img-fluid" src="img/exposants/1spatial.jpg">
+                            <div class="card-body p-0 mt-2">
+                                <a class="text-decoration-none text-white" href="https://1spatial.com/" target="_blank">
+                                    <h5>1SPATIAL</h5>
+                                </a>
+                                <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                    data-bs-target="#expo10Modal">
+                                    En savoir plus
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="expo10Modal" tabindex="-1">
+                            <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">1SPATIAL</h3>
+                                            <button type="button" class="btn-close btn-close-white"
+                                                data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body text-start">
+                                        <div class="card bg-transparent">
+                                            <div class="row text-center text-lg-start">
+                                                <div class="col-lg-4">
+                                                    <img src="img/exposants/1spatial.jpg"
+                                                        class="img-fluid rounded-3 mb-3">
+                                                </div>
+                                                <div class="col-lg-8 p-0">
+                                                    <div class="card-body pt-0">
+                                                        <p class="card-text exposant-card-text">
+                                                            1spatial est un leader mondialdans la fourniture de
+                                                            logicielset de prestations pour la gestion des données de
+                                                            localisation géospatiales. Nous nous efforçons de rendre le
+                                                            monde plus durable, plus sûr et plus intelligent pour
+                                                            l'avenir. Notre solution Realworld4D soutient votre
+                                                            stratégie digitale en reliant intelligemment les plans DAO,
+                                                            les maquettes numériques BIM, les données descriptives et
+                                                            les documents associés dans une solution de BIM GEM (Gestion
+                                                            Exploitation Maintenance) des batiments et des
+                                                            infrastructures réseaux, Notre approche utomatisée basée sur
+                                                            des règles gère la qualité, l'intégration et
+                                                            l'enrichissement des données 3D et 2D grâce à 1Integrate
+                                                            pour que vous disposiez d'un référentiel patrimonial précis
+                                                            et fiable.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a role="button" class="btn bim-green-bg text-white"
+                                            href="https://1spatial.com/" target="_blank">Visiter le site
+                                            web</a>
+                                        <button type="button" class="btn btn-light"
+                                            data-bs-dismiss="modal">Fermer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -1072,17 +1074,96 @@
         <!--Partenaires-->
         <section class="">
             <div class="container">
-                <div class="row justify-content-center align-items-center text-center text-uppercase">
+                <div class="row justify-content-center align-items-center text-center">
                     <div class="col-lg-10 col-12">
-                        <!-- <p class="lead bim-green-text fw-bold">nos partenaires</p>
-                        <h1 class="stroke-text big-title">partenaires</h1>
+                        <p class="lead bim-green-text fw-bold text-uppercase">nos partenaires</p>
+                        <h1 class="stroke-text big-title text-uppercase">partenaires</h1>
+                        <div class="col-lg-3 col-md-6 col-10 mx-auto text-center">
+                            <div class="card h-100 mb-2 bg-transparent exposant-card">
+                                <img class="card-img-top exposant-card-img-top img-fluid"
+                                    src="img/partenaires/betelec.jpg">
+                                <div class="card-body p-0 mt-2">
+                                    <a class="text-decoration-none text-white" href="http://www.betelec.ch/"
+                                        target="_blank">
+                                        <h5>BETELEC</h5>
+                                    </a>
+                                    <a role="button" class="text-decoration-none info-link" data-bs-toggle="modal"
+                                        data-bs-target="#partnerModal">
+                                        En savoir plus
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="partnerModal" tabindex="-1">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">BETELEC</h3>
+                                                <button type="button" class="btn-close btn-close-white"
+                                                    data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body text-start">
+                                            <div class="card bg-transparent">
+                                                <div class="row text-center text-lg-start">
+                                                    <div class="col-lg-4">
+                                                        <img src="img/partenaires/betelec.jpg"
+                                                            class="img-fluid rounded-3 mb-3">
+                                                    </div>
+                                                    <div class="col-lg-8 p-0">
+                                                        <div class="card-body pt-0">
+                                                            <p class="card-text exposant-card-text">
+                                                                Betelec est une entreprise qui a pour but l'ingénierie,
+                                                                le
+                                                                conseil, la conception, l'établissement de projets ainsi
+                                                                que
+                                                                la direction de travaux et l'exploitation dans le
+                                                                domaine
+                                                                des installations électriques et de la modélisation 3D.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a role="button" class="btn bim-green-bg text-white"
+                                                href="http://www.betelec.ch/" target="_blank">Visiter le site
+                                                web</a>
+                                            <button type="button" class="btn btn-light"
+                                                data-bs-dismiss="modal">Fermer</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5 pb-5"></div>
+                    </div>
+                    <h1 class="stroke-text big-title text-uppercase">partenaires medias</h1>
+                    <div class="col-lg-10 col-12">
+                        <div class="row mb-5 justify-content-center">
+                            <div class="col-lg-3 col-6 text-center me-lg-4 me-0">
+                                <a class="text-decoration-none" target="_blank" href="http://www.batibtp.fr/">
+                                    <div class="card">
+                                        <img class="card-img img-fluid" src="img/partenaires/batibtp.jpg">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6 text-center">
+                                <a class="text-decoration-none" target="_blank" href="http://www.toutlebim.fr/">
+                                    <div class="card">
+                                        <img class="card-img img-fluid" src="img/partenaires/toutlebim.jpg">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                         <div class="pt-5 pb-5 mt-5"></div>
-                        <div class="pt-5 pb-5 mt-5"></div> -->
                         <div class="col-lg-3 col-md-6 col-10 mx-auto">
                             <p class="lead bim-green-text fw-bold">évenement organisé<br>avec le soutien de</p>
-                            <div class="card">
-                                <img class="card-img img-fluid" src="img/partenaires/soutien.jpg" alt="...">
-                            </div>
+                            <a href="https://www.ge.ch/" target="_blank">
+                                <div class="card">
+                                    <img class="card-img img-fluid" src="img/partenaires/soutien.jpg" alt="...">
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
