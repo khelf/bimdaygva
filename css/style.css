@@ -148,6 +148,12 @@
         background-color: transparent;
         border:none;
     }
+    .carousel-img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 50vw;
+    }
     /*******cards*********/
     .card {
         border:none;
@@ -155,7 +161,6 @@
     .card, .card-img {
         border-radius: 20px;
     }
-
     /***********Billetterie**********/
     .pass {
         border: 5px solid white;
@@ -516,6 +521,9 @@
         .prog-line {
             width: 100%;
         }
+        .carousel-img{
+            height: 100vw;
+        }
     }
     @media (max-width: 520px) {
         .big-title {
@@ -526,7 +534,10 @@
         }
         .fond, .not-found-fond {
             width:90%;
-        }  
+        } 
+        .carousel-img{
+            height: 100vw;
+        } 
     }
     @media (min-width:521px) and (max-width:670px) {
         .fond, .not-found-fond {
