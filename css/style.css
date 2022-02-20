@@ -381,7 +381,7 @@
             text-align: center;
             background: #319E6E;
             color: #FFF;
-            z-index: 9999;
+            z-index: 1039;
             -webkit-transition: 0.2s opacity;
             transition: 0.2s opacity;
             cursor: pointer;
