@@ -102,6 +102,9 @@
         background-color: #319E6E;
         color:white;
     }
+    .prog-btn {
+        width: 20rem;
+    }
     /*******test style**********/
     .stroke-text {
         color: transparent;
@@ -159,7 +162,13 @@
         border:none;
     }
     .card, .card-img {
-        border-radius: 20px;
+        border-radius: 1.5rem;
+    }
+    .card-img, .card-img-top {
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
     }
     /***********Billetterie**********/
     .pass {
@@ -526,8 +535,11 @@
         }
     }
     @media (max-width: 520px) {
+        .hero-text h1 {
+            font-size: 5rem;
+        }
         .big-title {
-            font-size:4rem;
+            font-size:3.2rem;
         }
         .contact-titles {
             font-size: 3rem; 
@@ -538,6 +550,9 @@
         .carousel-img{
             height: 100vw;
         } 
+        h5 {
+            font-size: 1.1rem;
+        }
     }
     @media (min-width:521px) and (max-width:670px) {
         .fond, .not-found-fond {
