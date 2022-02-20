@@ -220,6 +220,7 @@
         line-height: 0;
         font-weight: bold;
         font-size: 40px;
+        cursor: pointer;
     }
     .info-link {
         color: #319E6E;
