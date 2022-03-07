@@ -1,0 +1,367 @@
+.app_bg{
+    background-image: url('../img/application/app_bg.png');
+    background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+
+.application_area{
+    padding-top: 100px;
+    text-align: center;
+    height: 100%;
+    position: relative;
+
+
+    h1{
+        font-size: 50px;
+        font-weight: 700;
+        color:#1F1F1F; 
+        display: inline-block;
+        position: relative;
+        margin-bottom: 50px;
+        @media #{$mobile_device} {
+            font-size: 26px;
+        }
+        @media #{$tablet_device} {
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 100px;
+        }
+        @media #{$mid_device} {
+        }
+        &::before{
+            position: absolute;
+            right: 0;
+            content: "";
+            width: 128px;
+            height: 4px;
+            background-image: url(../img/speakers/line.png);
+            top: 50%;
+            margin-bottom: 2px;
+            right: -158px;
+            @media #{$mobile_device} {
+                display: none;
+            }
+            @media #{$tablet_device} {
+                width: 50px;
+                right: -58px;
+            }
+        }
+        &::after{
+            position: absolute;
+            right: 0;
+            content: "";
+            width: 128px;
+            height: 4px;
+            background-image: url(../img/speakers/line.png);
+            top: 50%;
+            margin-bottom: 2px;
+            left: -158px;
+            @media #{$mobile_device} {
+                width: 80px;
+                left: -100px;
+                display: none;
+            }
+            @media #{$tablet_device} {
+                width: 50px;
+                left: -58px;
+            }
+        }
+    }
+        
+    img {
+        width: 15%;
+        margin-bottom: 50px;
+        @media #{$mobile_device} {
+            width: 35%;
+        }
+        @media #{$tablet_device} {
+            width: 25%;
+        }
+    }
+.buttons {
+    @media #{$mobile_device} {
+        display:none;
+    }
+
+    .google{
+        background-color: black;
+        text-align: center;
+        width: 50%;
+        float: right;
+        height: 80px;
+        border-radius: 10px;
+
+        @media #{$mobile_device} {
+            width: 40%;
+            height: 60px;
+            float: left;
+        }
+        @media #{$tablet_device} {
+            width: 80%;
+        }
+
+        img{
+            width: 20%;
+            float: left;
+            margin-top: 8%;
+            margin-left: 5%;
+            @media #{$mobile_device} {
+                margin-top: 12%;
+            }
+        }
+        h2 {
+            color:white;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: -1px;
+            line-height: 1.2rem;
+            @media #{$mobile_device} {
+                font-size: 20px;
+                line-height: 1rem;
+            }
+        }
+        h3 {
+            color:white;
+            font-size: 16px;
+            letter-spacing: -1px;
+            font-weight: 400;
+            text-align: left;
+            margin-top:10px;
+            @media #{$mobile_device} {
+                font-size: 12px;
+                margin-top:5px;
+            }
+        }
+    }
+    .apple{
+        text-align: center;
+        float: left;
+        width: 48%;
+        height: 80px;
+        background-color: black;
+        border-radius: 10px;
+
+        @media #{$mobile_device} {
+            width: 40%;
+            height: 60px;
+            float: right;
+        }
+        @media #{$tablet_device} {
+            width: 75%;
+        }
+
+
+        img{
+            width: 22%;
+            float: left;
+            margin-top: 5%;
+            margin-left: 8%;
+            @media #{$mobile_device} {
+                margin-top: 10%;
+            }
+        }
+        h2 {
+            color:white;
+            font-size: 32px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: -1px;
+            line-height: 2rem;
+            @media #{$mobile_device} {
+                font-size: 20px;
+                line-height: 1rem;
+            }
+        }
+        h3 {
+            color:white;
+            font-size: 12px;
+            letter-spacing: -1px;
+            font-weight: 400;
+            text-align: left;
+            margin-top:10px;
+            @media #{$mobile_device} {
+                font-size: 12px;
+                margin-top:5px;
+            }
+        }
+    }
+
+}
+
+.butt_mob {
+    display:none;
+    @media #{$tablet_device} {
+        display:none;
+    }
+    @media #{$mobile_device} {
+        display:block;
+    }
+    .google{
+        background-color: black;
+        text-align: center;
+        width: 45%;
+        float: left;
+        height: 60px;
+        border-radius: 10px;
+
+        img{
+            width: 20%;
+            float: left;
+            margin-top: 8%;
+            margin-left: 8%;
+        }
+        h2 {
+            color:white;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: -1px;
+            line-height: 1rem;
+        }
+        h3 {
+            color:white;
+            font-size: 12px;
+            letter-spacing: -1px;
+            font-weight: 400;
+            text-align: left;
+            margin-top:5px;
+        }
+    }
+    .apple{
+        text-align: center;
+        float: right;
+        width: 45%;
+        height: 60px;
+        background-color: black;
+        border-radius: 10px;
+
+        img{
+            width: 22%;
+            float: left;
+            margin-top: 5%;
+            margin-left: 10%;
+        }
+        h2 {
+            color:white;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: -1px;
+            line-height: 1rem;
+        }
+        h3 {
+            color:white;
+            font-size: 12px;
+            margin-top:5px;
+            letter-spacing: -1px;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+
+}
+
+.afficher {
+    @media #{$mobile_device} {
+        margin-top: 60px;
+    }
+    .affiche{
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            color:#1F1F1F; 
+            display: inline-block;
+            position: relative;
+            margin-bottom: 50px;
+            margin-top:50px; 
+            @media #{$mobile_device} {
+                font-size: 16px;
+            }
+        }
+        img{
+            width: 20%;
+            @media #{$mobile_device} {
+                width: 40%;
+            }
+        }
+    }
+}
+
+      /*-------popup card ----------*/
+  
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 2000;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 20px auto;
+    padding: 20px;
+    height:100%;
+    background: transparent;
+    color:white;
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+
+    @media #{$mobile_device} {
+        margin: 150px auto;
+        padding: 0px;
+        width: 80%;
+        height:80%;
+        text-align: center;
+    }
+    @media #{$tablet_device} {
+        width: 100%;
+    }
+    img {
+        width: 85%;
+        height:98%;
+        @media #{$mobile_device} {
+            width: 100%;
+            height:70%;
+        }
+        @media #{$tablet_device} {
+            width: 92%;
+        }
+      }
+      .close {
+        position: absolute;
+        top: 0px;
+        right: -20px;
+        transition: all 200ms;
+        font-size: 50px;
+        font-weight: 200;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: #fff ;
+        }
+        @media #{$mobile_device} {
+            top:-50px;
+            right: -20px;
+        }
+        @media #{$tablet_device} {
+            width: 100%;
+            right: -350px;
+        }
+      }
+  }
+}

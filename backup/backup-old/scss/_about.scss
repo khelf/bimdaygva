@@ -1,0 +1,94 @@
+.about_area{
+    position: relative;
+    background-image: url('../img/about/about.png');
+    background-size: 100% 100%;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    @media #{$mobile_device} {
+        height: auto;
+    }
+    @media #{$tablet_device} {
+    }
+    .about_thumb{
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        padding:5%;
+        img{
+            width: 60%;
+            @media #{$mid_device} {
+                width: 70%;
+            }
+            @media #{$tablet_device} {
+                width: 60%;
+            }
+            @media #{$mobile_device} {
+                width: 60%;
+            }
+        }
+    }
+    .about_info{
+        height: 200px;
+        width: 70%;
+        text-align: center !important;
+        a {
+        
+        .about-item{
+            position: relative;
+            display: flex;
+            min-height: 80px;
+            text-align: center;
+            color: white;
+
+            @media #{$mid_device} {
+            }
+            @media #{$tablet_device} {
+                min-height: 50px;
+            }
+            @media #{$mobile_device} {
+                min-height: 50px;
+            }
+            &:hover *{
+                color: $hover_bg;
+            }
+        }
+    
+        .about-item * {
+            font-size: 35px;
+            font-family: $font3;
+            text-transform: uppercase;
+            font-weight: 800;
+            position: absolute;
+            top:0;
+            color: white;
+            
+            @media #{$mid_device} {
+                font-size: 30px;
+            }
+            @media #{$tablet_device} {
+                font-size: 25px;
+                min-height: 20px;
+            }
+            @media #{$mobile_device} {
+                font-size: 25px;
+            }
+        }
+    }
+        
+        @media #{$mobile_device} {
+            margin-top: 0px;
+         }
+         @media #{$tablet_device} {
+            margin-top: 20%;
+         }        
+    }
+}
