@@ -105,7 +105,17 @@
     .prog-btn {
         width: 20rem;
     }
-    /*******test style**********/
+    .btn-bim-big {
+        width: 20rem;
+        border: 2px solid #319E6E;
+        color: #319E6E;
+        font-weight: 600;
+        font-size: 1.8rem;
+        border-radius: 0.8rem;
+        height: 60px;
+        transition: 0.5s;
+    }
+    /*******text style**********/
     .stroke-text {
         color: transparent;
         -webkit-text-fill-color: transparent;
@@ -113,6 +123,23 @@
         -webkit-text-stroke-color: white;
         font-weight: 900;
         text-transform: uppercase;
+    }
+    .stroke-text-green {
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #319E6E;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 8rem;
+        line-height: 0.9;
+    }
+    .small-stroke-text {
+        font-size: 1.8rem;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        font-weight: 900;
     }
     .big-title {
         text-align: center;
@@ -136,6 +163,44 @@
     }
     .video-section .ratio iframe{
         border-radius: 18px;
+    }
+    /***************blog sections****************/
+    .blog-item {
+        border: 10px solid white!important;
+    }
+    .blog-item-title {
+        color: black;
+        font-style: italic;
+        text-align: justify;
+        font-weight: 800;
+        letter-spacing: 0.1rem;
+    }
+    .blog-item-quote {
+        text-align: start;
+        color:#2a8a60;
+        font-style: italic;
+        line-height: 1.2;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    .similar {
+        text-align: center;
+        color:#319E6E;
+        font-style: italic;
+        line-height: 1.2;
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    .blog-item-suite-link, .similar-article {
+        transition: 0.5s;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .blog-item-suite-link:hover {
+        color: #319E6E90;
+        text-decoration: underline;
     }
     /*********horizontal lines***********/
     .prog-line {
@@ -169,6 +234,33 @@
         border-top-right-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
         border-bottom-right-radius: 1.5rem;
+    }
+    /*********Edition 2 page *************/
+    .section-remerciement, .contenu-article {
+        border-radius: 2rem;
+        background-color: white;
+        color: black;
+    }
+    .section-remerciement p {
+        font-weight: 400;
+    }
+    #prog11-1{
+        transition: 0.5s;
+    }
+    i.fa-chevron-up {
+        display: none
+    }
+    i.fa-chevron-up[aria-expanded=false] {
+        display: none;
+    }
+    i.fa-chevron-up[aria-expanded=true] {
+        display: block;
+    }
+    i.fa-chevron-down[aria-expanded=true] {
+        display: block;
+    }
+    i.fa-chevron-down[aria-expanded=true] {
+        display: none;
     }
     /***********Billetterie**********/
     .pass {
@@ -369,6 +461,20 @@
         border-color: #319E6E;
         background-color: #319E6E;
     }
+    .share-icons li {
+        height:50px;
+        width: 50px;
+        border: 2px solid black;
+        transition: 0.5s;
+    }
+    .share-icons li i{
+        color: black;
+        font-size: 30px;
+    }
+    .share-icons li:hover {
+        border-color: #319E6E;
+        background-color: #319E6E;
+    }
     /**********back to top***********/
         
         #back-to-top {
@@ -423,6 +529,12 @@
             -webkit-text-stroke-color: white;
             font-weight: 900;
             font-style: italic;
+        }
+        .articles-title {
+            color: white;
+            font-style: italic;
+            text-align: justify;
+            font-weight: 800;
         }
         .blog-text {
             text-align: justify;
@@ -502,6 +614,10 @@
         }
     /*********responsive************/
     @media (max-width: 991px) {
+
+        body.modal-open .navbar {
+            height: 100%;
+        }
 
         .navbar-brand img {
             width: 50px;
