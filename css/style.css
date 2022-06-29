@@ -216,11 +216,19 @@
         background-color: transparent;
         border:none;
     }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 5vw;
+        height: 5vw;
+    }
     .carousel-img {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 50vw;
+        height: 30vw;
+    }
+    .modal-carousel-item {
+        max-height: 80vh;
     }
     /*******cards*********/
     .card {
@@ -665,7 +673,7 @@
             width:90%;
         } 
         .carousel-img{
-            height: 100vw;
+            height: 70vw;
         } 
         h5 {
             font-size: 1.1rem;
@@ -681,6 +689,9 @@
         .contact-titles {
             font-size: 3rem; 
         }
+        .carousel-img {
+            height: 70vw;
+        }
     }
     @media (min-width: 671px) and (max-width: 768px) {
         .fond, .not-found-fond {
@@ -691,6 +702,9 @@
         }
         .contact-titles {
             font-size: 4rem; 
+        }
+        .carousel-img {
+            height: 50vw;
         }
     }
 
@@ -704,6 +718,9 @@
         .contact-titles {
             font-size: 4rem; 
         }
+        .carousel-img {
+            height: 50vw;
+        }
     }
 
     @media (min-width: 869px) and (max-width: 991px) {
@@ -715,5 +732,8 @@
         }
         .contact-titles {
             font-size: 4rem; 
+        }
+        .carousel-img {
+            height: 40vw;
         }
     }
