@@ -176,24 +176,37 @@
                     <div class="col-lg-10 col-12">
                         <h1 class="stroke-text big-title">BLOG</h1>
                     </div>
-                    <div class="col-lg-12 col-md-10 col-12 mt-5">
-                        <div class="card mb-3 bg-transparent blog-item">
+                    <div class="col-lg-8 col-md-10 col-12 mt-5">
+                        <div class="card mb-3 blog-item bg-transparent">
                             <div class="row g-0">
-                                <div class="col-lg-4">
-                                    <img src="img/accueil/blog-cards/article8.png" class="img-fluid h-100 rounded-start">
+                                <div class="col-lg-4 col-12">
+                                    <a class="h-100 w-100 d-flex justify-content-center align-items-center"
+                                        href="blog/les-innovations-dans-le-domaine-de-la-construction-les-nouveaux-materiaux-et-la-realite-augmentee-par-francisco-da-cruz.html">
+                                        <div class="article rounded-3" style="background-image: url(img/accueil/blog-cards/dacruz.jpg);
+                                            width: 100%;
+                                            height: 100%;
+                                            display:block;
+                                            background-position: center;
+                                            background-repeat: no-repeat;">
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-12">
                                     <div class="card-body bg-white h-100">
-                                        <h1 class="card-title blog-item-title text-uppercase">Le management du
-                                            changement dans un projet d'infrastructure</h1>
-                                        <p class="green-text fs-3 fw-bold lh-1">Par Sylvain RISS</p>
-                                        <p class="card-text text-dark fs-3">
-                                            L'innovation consiste à créer de la valeur pour les
-                                            clients. Dans un contexte de digitalisation et
-                                            d'innovation au sein des entreprises, les salariés
-                                            doivent faire de la (...) <a href="blog/la-conduite-du-changement-dans-les-projets-d-infrastructures-complexes-par-sylvain-riss.html"
-                                                class="blog-item-suite-link bim-green-text fs-3 fw-bold">Lire la
-                                                suite</a>
+                                        <a class="text-decoration-none"
+                                            href="blog/les-innovations-dans-le-domaine-de-la-construction-les-nouveaux-materiaux-et-la-realite-augmentee-par-francisco-da-cruz.html">
+                                            <h4 class="card-title blog-item-title text-uppercase">Les innovations dans
+                                                le domaine de la construction – Les nouveaux matériaux et la
+                                                réalité augmentée</h4>
+                                        </a>
+                                        <p class="green-text fw-bold lh-1">Par Francisco Da Cruz</p>
+                                        <p class="card-text text-dark">
+                                            Francisco Da Cruz puise dans la R&D et dans les travaux de recherche de la
+                                            communauté
+                                            scientifique pour nous présenter les dernières innovations concernant les
+                                            (...) <a
+                                                href="blog/les-innovations-dans-le-domaine-de-la-construction-les-nouveaux-materiaux-et-la-realite-augmentee-par-francisco-da-cruz.html"
+                                                class="blog-item-suite-link green-text fw-bold">Lire la suite</a>
                                         </p>
                                     </div>
                                 </div>
@@ -264,7 +277,74 @@
 
 
     <script src="js/main.js"></script>
+    <!-- <script>
 
+        function adjustImage(imgRef, ratioSM, ratioLG) {
+            const bgh = 'auto 100%';
+            const bgw = '100% auto';
+            if (window.innerWidth < 992) {
+                imgRef.style.backgroundSize = bgw;
+                if (ratioSM) imgRef.style.height = `${imgRef.clientWidth * ratioSM}px`;
+            }
+            else {
+                imgRef.style.backgroundSize = bgh;
+                if (ratioLG) imgRef.style.height = `${imgRef.clientWidth * ratioLG}px`;
+            }
+
+        }
+        function fixImages() {
+            const articlesImages = document.querySelectorAll(".article");
+            const ratiosSM = [.65, .65, .65, .65, .65, .65, .65, .65];
+            const ratiosLG = [1.35, 1.35, 0, 0, 0, 0, 0, 0, 0];
+            for (let i = 0; i < articlesImages.length; i++) {
+                adjustImage(articlesImages[i], ratiosSM[i], ratiosLG[i]);
+            }
+        }
+        window.onload = () => {
+            fixImages();
+        }
+        window.onresize = () => {
+            fixImages();
+        }
+    </script> -->
+
+    <script>
+
+        function adjustImage(imgRef, ratioSM, ratioLG, ratioXL) {
+            const bgh = 'auto 100%';
+            const bgw = '100% auto';
+            if (window.innerWidth < 992) {
+                imgRef.style.backgroundSize = bgw;
+                if (ratioSM) imgRef.style.height = `${imgRef.clientWidth * ratioSM}px`;
+            }
+            else {
+                if ((window.innerWidth >= 992) && (window.innerWidth < 1200)) {
+                    imgRef.style.backgroundSize = bgh;
+                    if (ratioLG) imgRef.style.height = `${imgRef.clientWidth * ratioLG}px`;
+                } else {
+                    imgRef.style.backgroundSize = bgh;
+                    if (ratioXL) imgRef.style.height = `${imgRef.clientWidth * ratioXL}px`;
+                }
+            }
+
+        }
+        function fixImages() {
+            const articlesImages = document.querySelectorAll(".article");
+            const ratiosSM = [.65, .65, .65, .65, .65, .65, .65, .65];
+            const ratiosLG = [1.5, 1.35, 0, 0, 0, 0, 0, 0, 0];
+            const ratiosXL = [1, 1.35, 0, 0, 0, 0, 0, 0, 0];
+            for (let i = 0; i < articlesImages.length; i++) {
+                console.log(articlesImages.length)
+                adjustImage(articlesImages[i], ratiosSM[i], ratiosLG[i], ratiosXL[i]);
+            }
+        }
+        window.onload = () => {
+            fixImages();
+        }
+        window.onresize = () => {
+            fixImages();
+        }
+    </script>
 
 </body>
 

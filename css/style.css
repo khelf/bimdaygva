@@ -256,7 +256,14 @@
         transition: 0.5s;
     }
     i.fa-chevron-up {
-        display: none
+        display: none;
+        transition: 0.5s;
+    }
+    i.fa-chevron-down {
+        transition: 0.5s;
+    }
+    i.fa-chevron-down:hover, i.fa-chevron-up:hover {
+        color: #319E6E
     }
     i.fa-chevron-up[aria-expanded=false] {
         display: none;
@@ -628,7 +635,11 @@
         }
 
         .navbar-brand img {
-            width: 50px;
+            width: 60px;
+        }
+        .navbar-toggler-icon {
+            width: 2.5em;
+            height: 2.5em;
         }
         .navbar {
             position: fixed;
@@ -639,7 +650,7 @@
             background-color: rgba(0, 14, 36, 0.9)!important;
         }
         .menu-items a {
-        font-size: 2rem;
+        font-size: 3rem;
         color: transparent;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1.2px;
