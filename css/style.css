@@ -245,8 +245,6 @@
     }
     /*********Edition 2 page *************/
     .section-remerciement, .contenu-article {
-        border-radius: 2rem;
-        background-color: white;
         color: black;
     }
     .section-remerciement p {
