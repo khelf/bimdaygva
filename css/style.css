@@ -225,7 +225,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
-        height: 30vw;
+        height: 35vw;
     }
     .modal-carousel-item {
         max-height: 80vh;
@@ -627,9 +627,14 @@
             width: 70%;
             right: 50px;
         }
+        .card-lg {
+            display: block;
+        }
+        .card-sm {
+            display: none
+        }
     /*********responsive************/
     @media (max-width: 991px) {
-
         body.modal-open .navbar {
             height: 100%;
         }
@@ -669,6 +674,12 @@
         .carousel-img{
             height: 100vw;
         }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
+        }
     }
     @media (max-width: 520px) {
         .hero-text h1 {
@@ -689,6 +700,12 @@
         h5 {
             font-size: 1.1rem;
         }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
+        }
     }
     @media (min-width:521px) and (max-width:670px) {
         .fond, .not-found-fond {
@@ -703,6 +720,12 @@
         .carousel-img {
             height: 70vw;
         }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
+        }
     }
     @media (min-width: 671px) and (max-width: 768px) {
         .fond, .not-found-fond {
@@ -716,6 +739,12 @@
         }
         .carousel-img {
             height: 50vw;
+        }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
         }
     }
 
@@ -732,6 +761,12 @@
         .carousel-img {
             height: 50vw;
         }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
+        }
     }
 
     @media (min-width: 869px) and (max-width: 991px) {
@@ -746,5 +781,11 @@
         }
         .carousel-img {
             height: 40vw;
+        }
+        .card-lg {
+            display: none;
+        }
+        .card-sm {
+            display: block
         }
     }
